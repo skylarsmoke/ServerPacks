@@ -1,10 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\skyla\\OneDrive\\Desktop\\Rumor\\Server Packs\\Synergy Bass\\Development\\SynergyBassServer\\",
+  "WorkspaceRootPath": "C:\\Users\\skyla\\OneDrive\\Desktop\\Rumor\\Server Packs\\ServerPacks\\Synergy Bass\\Development\\SynergyBassServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AAF526D7-78D3-4629-81CF-512E41654C35}|SynergyBassServer.pyproj|C:\\Users\\skyla\\OneDrive\\Desktop\\Rumor\\Server Packs\\Synergy Bass\\Development\\SynergyBassServer\\SynergyBassServer.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{AAF526D7-78D3-4629-81CF-512E41654C35}|SynergyBassServer.pyproj|C:\\Users\\skyla\\OneDrive\\Desktop\\Rumor\\Server Packs\\ServerPacks\\Synergy Bass\\Development\\SynergyBassServer\\SynergyBassServer.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{AAF526D7-78D3-4629-81CF-512E41654C35}|SynergyBassServer.pyproj|solutionrelative:SynergyBassServer.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAF526D7-78D3-4629-81CF-512E41654C35}|SynergyBassServer.pyproj|C:\\Users\\skyla\\OneDrive\\Desktop\\Rumor\\Server Packs\\ServerPacks\\Synergy Bass\\Development\\SynergyBassServer\\KeyGen.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{AAF526D7-78D3-4629-81CF-512E41654C35}|SynergyBassServer.pyproj|solutionrelative:KeyGen.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "KeyGen.py",
+              "DocumentMoniker": "C:\\Users\\skyla\\OneDrive\\Desktop\\Rumor\\Server Packs\\ServerPacks\\Synergy Bass\\Development\\SynergyBassServer\\KeyGen.py",
+              "RelativeDocumentMoniker": "KeyGen.py",
+              "ToolTip": "C:\\Users\\skyla\\OneDrive\\Desktop\\Rumor\\Server Packs\\ServerPacks\\Synergy Bass\\Development\\SynergyBassServer\\KeyGen.py",
+              "RelativeToolTip": "KeyGen.py",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM5SURBVEhLtVVNSFRRFD7z85yGyZnUYZwxIrGUsCRSSrFFJlQriSCKCBdBLmZTlKCBi8xVzc5NiyREIqJVC6FctCgy6sWggyAVWDOpTaWpozO9mTfv53bue3fGMX3yLPrg45x33r3n3Pvd8\u002B6D/wpCiIW5eXR0dBDmmsXhgYGBMPPXYcMC/f397Glz9PT0SKIoTkuSdBGL8Cy8BlZm/woej4fr6uoq5TjuIS6skYXXwLAAz/OGLITP5yspKNLAwsagEgmCYIq9vb15PxqNLgaDwSmcv4el0vBPElGEQiGNQ0NDJTabzY\u002BhOv2NDjuz6/CnFIVobNTlRmk0m8Pg4GA4EomwJx2GO6BJNmJTUxOg3iAoFphNZCG2mIGltAp2u50euoNNz8NwB0ZYEUS4PfIeYvMrIKRFUGQZKUG52wF9504eGh8f59hQDVvuolhChjIXB6Hz9Sy5zpn5ZRgOf3G0tLTUsBQatiyRqhJ4/eEbdD54A6qiIGXdYpGUkIHi4uLtLIWGTbtIwYmUFqsVwtMpePQuDmPRn3C81g/NNT44UVcBnI2Ow13QIqoKx\u002BoTN0jyGSHS3CheRaWmuijhrob7L6byeq9Ko/t09ZolKoDwSp\u002BUmTwK3s6bpiQamYizVVLSXeX81RiVqrqczsS7UslggY8A8o/Tm0qUw\u002Bx8UltljjZcaaXXBVXlbqjyu2FvwANnmqvgQsMnTCpggTQSbTa\u002B2/A2LZToDi\u002BBLFE5JNhZ4oR77SI4yRS\u002Byd3saKU4Jk8BqCIyiwXQ\u002BrvNdVEF9jiVgEoRbHWBU3qJyb4iMak0CyB\u002BRrvMVo7M7aJo15IpiVoPBPKH6dkmsyhClXQpZJa40HdUA3CBJ6Ykoki7KyG\u002BkIS2g2nwkceYhElRVIu/LbwhCC2MTWl1ocXe3XFqDuzeI6b/aFb8FiwWCxSp2B0Ld/XkVG8FLVHQx3Nw4SVY0X0Lh48ieRyfNCURBf2I6BkQ7KFVrZksZZcBvJdwFU5tLCZ\u002BTpNrvhYpAN0BczfE9WtXJ/f53u6HxFO9SG4XrnqQAn1ZzuE5i8mH2fCtAz9/G/IKkZMR8mtCJqkxQrLfYxjjke3INjYUAfAb47MfvRyFLYgAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-05-24T06:56:05.938Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "SynergyBassServer.py",
-              "DocumentMoniker": "C:\\Users\\skyla\\OneDrive\\Desktop\\Rumor\\Server Packs\\Synergy Bass\\Development\\SynergyBassServer\\SynergyBassServer.py",
+              "DocumentMoniker": "C:\\Users\\skyla\\OneDrive\\Desktop\\Rumor\\Server Packs\\ServerPacks\\Synergy Bass\\Development\\SynergyBassServer\\SynergyBassServer.py",
               "RelativeDocumentMoniker": "SynergyBassServer.py",
-              "ToolTip": "C:\\Users\\skyla\\OneDrive\\Desktop\\Rumor\\Server Packs\\Synergy Bass\\Development\\SynergyBassServer\\SynergyBassServer.py",
+              "ToolTip": "C:\\Users\\skyla\\OneDrive\\Desktop\\Rumor\\Server Packs\\ServerPacks\\Synergy Bass\\Development\\SynergyBassServer\\SynergyBassServer.py",
               "RelativeToolTip": "SynergyBassServer.py",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFMAAAAAAAAA",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM5SURBVEhLtVVNSFRRFD7z85yGyZnUYZwxIrGUsCRSSrFFJlQriSCKCBdBLmZTlKCBi8xVzc5NiyREIqJVC6FctCgy6sWggyAVWDOpTaWpozO9mTfv53bue3fGMX3yLPrg45x33r3n3Pvd8\u002B6D/wpCiIW5eXR0dBDmmsXhgYGBMPPXYcMC/f397Glz9PT0SKIoTkuSdBGL8Cy8BlZm/woej4fr6uoq5TjuIS6skYXXwLAAz/OGLITP5yspKNLAwsagEgmCYIq9vb15PxqNLgaDwSmcv4el0vBPElGEQiGNQ0NDJTabzY\u002BhOv2NDjuz6/CnFIVobNTlRmk0m8Pg4GA4EomwJx2GO6BJNmJTUxOg3iAoFphNZCG2mIGltAp2u50euoNNz8NwB0ZYEUS4PfIeYvMrIKRFUGQZKUG52wF9504eGh8f59hQDVvuolhChjIXB6Hz9Sy5zpn5ZRgOf3G0tLTUsBQatiyRqhJ4/eEbdD54A6qiIGXdYpGUkIHi4uLtLIWGTbtIwYmUFqsVwtMpePQuDmPRn3C81g/NNT44UVcBnI2Ow13QIqoKx\u002BoTN0jyGSHS3CheRaWmuijhrob7L6byeq9Ko/t09ZolKoDwSp\u002BUmTwK3s6bpiQamYizVVLSXeX81RiVqrqczsS7UslggY8A8o/Tm0qUw\u002Bx8UltljjZcaaXXBVXlbqjyu2FvwANnmqvgQsMnTCpggTQSbTa\u002B2/A2LZToDi\u002BBLFE5JNhZ4oR77SI4yRS\u002Byd3saKU4Jk8BqCIyiwXQ\u002BrvNdVEF9jiVgEoRbHWBU3qJyb4iMak0CyB\u002BRrvMVo7M7aJo15IpiVoPBPKH6dkmsyhClXQpZJa40HdUA3CBJ6Ykoki7KyG\u002BkIS2g2nwkceYhElRVIu/LbwhCC2MTWl1ocXe3XFqDuzeI6b/aFb8FiwWCxSp2B0Ld/XkVG8FLVHQx3Nw4SVY0X0Lh48ieRyfNCURBf2I6BkQ7KFVrZksZZcBvJdwFU5tLCZ\u002BTpNrvhYpAN0BczfE9WtXJ/f53u6HxFO9SG4XrnqQAn1ZzuE5i8mH2fCtAz9/G/IKkZMR8mtCJqkxQrLfYxjjke3INjYUAfAb47MfvRyFLYgAAAAASUVORK5CYII=",
               "WhenOpened": "2024-05-22T02:51:20.282Z",
               "EditorCaption": ""
