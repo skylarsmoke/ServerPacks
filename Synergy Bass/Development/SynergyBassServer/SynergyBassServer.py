@@ -98,7 +98,7 @@ def verify_license_key(licenseKey, machineNumber):
         sql = sqlalchemy.text(f"SELECT * FROM tblLicenseKeys WHERE LicenseKey = '{licenseKey.upper()}'")
         result = db_conn.execute(sql)
 
-        for row in result:
+        for row in result.mappings():
             # first check if the machine number is populated
             if row["MachineNumber"] == "":
                 if not update_machine_number(licenseKey, machineNumber):
