@@ -22,45 +22,43 @@ from string import ascii_uppercase, digits
 from urllib import response
 
 # Third-Party Imports
-import pyodbc
-import pymysql
 import sqlalchemy
 import sendgrid
 from sendgrid.helpers.mail import Mail, Email, To, Content
 from google.cloud.sql.connector import Connector, IPTypes
 import urllib
+import psycopg2
+import pg8000
 
 # Local Application Imports
 import KeyGen
 
 # Set up connection variables
-instance_connection_name = "synergybassserver:us-central1:synergy-bass-licenses"
-db_user = "sqlserver"
+instance_connection_name = "synergybassserver:us-central1:synergybass-license"
+db_user = "postgres"
 db_password = "Rumoraudioisdope1!"
-db_name = "SynergyBassLicenses"
+db_name = "SynergyBass"
 
 # Initialize the Cloud SQL Connector
 connector = Connector()
 
-# Create connection string
-connection_string = urllib.parse.quote_plus(
-    f"DRIVER={{ODBC Driver 17 for SQL Server}};"
-    f"SERVER=127.0.0.1,1433;"
-    f"DATABASE={db_name};"
-    f"UID={db_user};"
-    f"PWD={db_password};"
-    "Encrypt=yes;"
-    "TrustServerCertificate=yes;"
-    "Connection Timeout=30;"
-)
+# Function to create a connection to the database
+def getconn():
+    conn = connector.connect(
+        instance_connection_name,
+        "pg8000",
+        user=db_user,
+        password=db_password,
+        db=db_name,
+    )
+    return conn
 
+pool = sqlalchemy.create_engine("postgresql+pg8000://", creator=getconn)
 
-# create connection pool
-pool = sqlalchemy.create_engine(f"mssql+pyodbc:///?odbc_connect={connection_string}")
 
 hostName = "0.0.0.0"
 serverPort = 8080
-serverVersion = "v0.8.5"
+serverVersion = "v1.0.5"
 privateRSAKey = "279808e40cef4350640026c8739e7201826d002cec7e260f3d16d0cf786842f1,602815978d207ee7ce4982c23d5c39729da90af57b850863165936256e3b7227"
 publick = "11,602815978d207ee7ce4982c23d5c39729da90af57b850863165936256e3b7227"
 shopify_secret = 'd2166fdd8ed38f7a74a4056d54f0bd39'
@@ -100,10 +98,10 @@ def verify_license_key(licenseKey, machineNumber):
 
         for row in result.mappings():
             # first check if the machine number is populated
-            if row["MachineNumber"] == "":
+            if row["machinenumber"] == "":
                 if not update_machine_number(licenseKey, machineNumber):
                     return [False, "update_failed"]
-            elif row["MachineNumber"] != machineNumber:
+            elif row["machinenumber"] != machineNumber:
                 # if the machine number is different than the original registration, it is not valid
                 return [False, "mach"]
             return [True, ""]
@@ -115,7 +113,7 @@ def verify_license_key(licenseKey, machineNumber):
 # inserts a new license key into the database
 def insert_new_license(licenseKey, email, machineNumber):
     with pool.connect() as db_conn:
-        sql = sqlalchemy.text(f"INSERT INTO tblLicenseKeys VALUES ('{licenseKey.upper()}', '{email.lower()}', '{machineNumber}')")
+        sql = sqlalchemy.text(f"INSERT INTO tblLicenseKeys VALUES ('{licenseKey.upper()}', '{machineNumber}', '{email.lower()}')")
         db_conn.execute(sql)
     
         db_conn.commit()
@@ -297,7 +295,7 @@ def send_license_key_email(email):
                         <p>""" + newLicenseKey + """</p>
                     </div>
                     <div class="buttons">
-                        <a href="https://www.example.com/mac-download" class="button" style="color: #FFFFFF; text-decoration: none">Download for Mac</a>
+                        <a href="https://drive.google.com/uc?export=download&id=1xYxaMFoBi4rVFQQ1mnUOcE6lUFA8f8vb" class="button" style="color: #FFFFFF; text-decoration: none">Download for Mac</a>
                         <a href="https://drive.google.com/uc?export=download&id=1TL89ym118KMCFy7YZkfrlBydATuzR9PS" class="button" style="color: #FFFFFF; text-decoration: none">Download for Windows</a>
                     </div>
                     <p>We hope you enjoy our plugin and if you have any questions or concerns please reach out!</p>
