@@ -59,9 +59,9 @@ pool = sqlalchemy.create_engine("postgresql+pg8000://", creator=getconn)
 hostName = "0.0.0.0"
 serverPort = 8080
 serverVersion = "v1.0.5"
-privateRSAKey = "279808e40cef4350640026c8739e7201826d002cec7e260f3d16d0cf786842f1,602815978d207ee7ce4982c23d5c39729da90af57b850863165936256e3b7227"
-publick = "11,602815978d207ee7ce4982c23d5c39729da90af57b850863165936256e3b7227"
-shopify_secret = 'd2166fdd8ed38f7a74a4056d54f0bd39'
+privateRSAKey = "redacted"
+publick = "redacted"
+shopify_secret = 'redacted'
 
 
 def verify_product(product):
