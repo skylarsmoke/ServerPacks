@@ -11,8 +11,8 @@ DATE = time.strftime("%d %b %Y %I:%M:%S%p")
 #MACHINE = "W7F9724C94"
 TIME = hex(round(time.time() * 1000))
 
-PRIVATE_KEY_PART_1 = int("279808e40cef4350640026c8739e7201826d002cec7e260f3d16d0cf786842f1", 16)
-PRIVATE_KEY_PART_2 = int("602815978d207ee7ce4982c23d5c39729da90af57b850863165936256e3b7227", 16)
+PRIVATE_KEY_PART_1 = int("redacted", 16)
+PRIVATE_KEY_PART_2 = int("redacted", 16)
 
 # Helper Function
 def apply_to_value(message, key_part1, key_part2):
